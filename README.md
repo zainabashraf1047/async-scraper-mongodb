@@ -38,27 +38,27 @@ python scraper.py
   Async Scraper Pipeline — 10 URLs
 ============================================================
 
-▶ Running SYNC scraper (sequential, blocking)...
+Running SYNC scraper (sequential, blocking)...
   [sync] fetched: https://realpython.com/async-io-python/
   ...
-  ✓ Sync done in 48.32s
+   Sync done in 48.32s
 
-▶ Running ASYNC scraper (concurrent, non-blocking)...
-  [✓ 200] https://realpython.com/async-io-python/
+Running ASYNC scraper (concurrent, non-blocking)...
+  [200] https://realpython.com/async-io-python/
   ...
-  ✓ Async done in 3.71s
+   Async done in 3.71s
 
 ────────────────────────────────────────────────────────────
-  ⚡ Speed comparison:
+     Speed comparison:
      Sync:  48.32s
      Async: 3.71s
      Speedup: 13.0×  (async is 13.0x faster)
 ────────────────────────────────────────────────────────────
 
-▶ Saving results to MongoDB Atlas (via motor)...
+ Saving results to MongoDB Atlas (via motor)...
   ✓ Saved 10 articles to 'scraper_db.articles'
 
-▶ Running aggregation pipeline...
+ Running aggregation pipeline...
   Total articles : 10
   Avg word count : 2840
   Max word count : 5200
